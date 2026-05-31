@@ -1,0 +1,25 @@
+---
+componentName:   atomic
+welcomeStyleCalamares:   false
+
+strings:
+    productName:         "Atomic Linux"
+    shortProductName:    "Atomic"
+    productVersion:      "2026.05"
+    shortProductVersion: "2026.05"
+    versionedName:       "Atomic Linux 2026.05"
+    shortVersionedName:  "Atomic 2026.05"
+    bootloaderEntryName: "Atomic"
+    productUrl:          "https://github.com/atomic-linux"
+    supportUrl:          "https://github.com/atomic-linux/issues"
+
+images:
+    productLogo:         "logo.png"
+    productWelcome:      "welcome.png"
+
+slideshow:               "show.qml"
+
+style:
+    sidebarBackground:    "#181825"
+    sidebarText:          "#cdd6f4"
+    sidebarTextSelect:    "#89b4fa"

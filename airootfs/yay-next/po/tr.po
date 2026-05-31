@@ -1,0 +1,778 @@
+#
+# Translators:
+# Ahmet Arda Kavakcı, 2022
+# Mehmet Özgür Bayhan <mozgurbayhan@gmail.com>, 2023
+# can avar, 2023
+# yiğit yeten, 2023
+#
+msgid ""
+msgstr ""
+"Last-Translator: yiğit yeten, 2023\n"
+"Language-Team: Turkish (https://app.transifex.com/yay-1/teams/123732/tr/)\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: xgotext\n"
+
+#: pkg/menus/menu.go:32
+msgid " (Build Files Exist)"
+msgstr "(Kurulum Dosyaları Var)"
+
+#: pkg/menus/menu.go:27
+msgid " (Installed)"
+msgstr "(Kuruldu)"
+
+#: cmd.go:453
+msgid " [Installed]"
+msgstr "[Kuruldu]"
+
+#: cmd.go:410 vote.go:36
+msgid " there is nothing to do"
+msgstr "yapılacak bir şey yok"
+
+#: pkg/menus/menu.go:49
+msgid "%s [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)"
+msgstr "%s [A]Hepsi [Ab]İptal [I]Kurulmuş [No]Kurulmamış veya (1 2 3, 1-3, ^4)"
+
+#: pkg/sync/build/installer.go:308
+msgid "%s already made -- skipping build"
+msgstr "%s çoktan yapıldı -- yapılandırma atlanıyor"
+
+#: pkg/menus/edit_menu.go:57
+msgid "%s is not set"
+msgstr "%s belirlenmiş değil"
+
+#: pkg/settings/exe/cmd_builder.go:257
+msgid "%s is present."
+msgstr "%s hâlihazırda bulunuyor."
+
+#: pkg/dep/dep_graph.go:460 pkg/sync/build/installer.go:305
+msgid "%s is up to date -- skipping"
+msgstr "%s güncel -- atlanıyor"
+
+#: pkg/upgrade/service.go:292
+#, fuzzy
+msgid "%s to upgrade/install."
+msgstr "Yükseltilecek/yüklenecek paketler."
+
+#: pkg/upgrade/service.go:286
+msgid "%s will also be installed for this operation."
+msgstr ""
+
+#: pkg/sync/srcinfo/pgp/keys.go:124
+msgid "%s, required by: %s"
+msgstr "%s, ihtiyaç duyan: %s"
+
+#: pkg/menus/diff_menu.go:49
+msgid "%s: No changes -- skipping"
+msgstr "%s: Değişiklik yok -- atlanıyor"
+
+#: pkg/query/filter.go:22
+msgid "%s: can't use target with option --aur -- skipping"
+msgstr "%s: hedef --aur seçeneği ile kullanılamaz -- atlanıyor"
+
+#: pkg/query/filter.go:17
+msgid "%s: can't use target with option --repo -- skipping"
+msgstr "%s: hedef --repo seçeneği ile kullanılamaz -- atlanıyor"
+
+#: pkg/upgrade/sources.go:57
+msgid "%s: ignoring package upgrade (%s => %s)"
+msgstr "%s: paket güncellemesi göz ardı ediliyor (%s => %s)"
+
+#: pkg/query/aur_warnings.go:46
+msgid "%s: local (%s) is newer than AUR (%s)"
+msgstr "%s: yerel (%s) AUR'dan (%s) daha güncel"
+
+#: vote.go:51
+msgid ""
+"%s: please set AUR_USERNAME and AUR_PASSWORD environment variables for voting"
+msgstr ""
+"Oy verebilmek için AUR_USERNAME ve AUR_PASSWORD ortam değişkenlerini "
+"ayarlayın"
+
+#: pkg/download/unified.go:192
+msgid "(%d/%d) Downloaded PKGBUILD from ABS: %s"
+msgstr "(%d/%d) PKGBUILD, ABS'den indirildi: %s"
+
+#: pkg/download/aur.go:92 pkg/download/unified.go:188
+msgid "(%d/%d) Downloaded PKGBUILD: %s"
+msgstr "(%d/%d) PKGBUILD indirildi: %s"
+
+#: pkg/download/aur.go:82
+#, fuzzy
+msgid "(%d/%d) Failed to download PKGBUILD: %s"
+msgstr "(%d/%d) PKGBUILD indirildi: %s"
+
+#: pkg/sync/srcinfo/service.go:109
+msgid "(%d/%d) Parsing SRCINFO: %s"
+msgstr "(%d/%d) SRCINFO çözümleniyor: %s"
+
+#: pkg/query/types.go:72 pkg/query/types.go:103
+msgid "(Installed)"
+msgstr "(Kuruldu)"
+
+#: pkg/query/types.go:70 pkg/query/types.go:101
+msgid "(Installed: %s)"
+msgstr "(Kuruldu: %s)"
+
+#: pkg/query/types.go:61
+msgid "(Orphaned)"
+msgstr "(Öksüz bırakıldı)"
+
+#: pkg/query/types.go:65
+msgid "(Out-of-date: %s)"
+msgstr "(Güncel değil: %s)"
+
+#: print.go:44
+msgid "AUR URL"
+msgstr "AUR URL"
+
+#: pkg/dep/dep_graph.go:75
+msgid "AUR"
+msgstr "AUR"
+
+#: pkg/menus/edit_menu.go:58
+msgid "Add %s or %s to your environment variables"
+msgstr "Ortam değişkenlerinize %s veya %s seçeneklerini ekleyin"
+
+#: main.go:60
+msgid "Avoid running yay as root/sudo."
+msgstr "Yay'ı root/sudo olarak çalıştırmaktan kaçının"
+
+#: pkg/dep/dep_graph.go:63
+msgid "Check Dependency"
+msgstr "Bağımlılık Kontrolü"
+
+#: print.go:41
+msgid "Check Deps"
+msgstr "Bağımlıkları Kontrol Et"
+
+#: pkg/upgrade/service.go:90
+msgid "Checking development packages..."
+msgstr "Geliştirme paketleri kontrol ediliyor..."
+
+#: pkg/sync/workdir/clean.go:45
+msgid "Cleaning (%d/%d): %s"
+msgstr "Temizleniyor (%d/%d): %s"
+
+#: print.go:42
+msgid "Conflicts With"
+msgstr "Çakışıyor:"
+
+#: pkg/menus/clean_menu.go:62
+msgid "Deleting (%d/%d): %s"
+msgstr "Siliniyor (%d/%d): %s"
+
+#: pkg/dep/dep_graph.go:61
+msgid "Dependency"
+msgstr "Bağımlılık"
+
+#: print.go:38
+msgid "Depends On"
+msgstr "Bağımlı:"
+
+#: print.go:33
+msgid "Description"
+msgstr "Açıklama"
+
+#: pkg/menus/diff_menu.go:160
+msgid "Diffs to show?"
+msgstr "Gösterilecek olan değişiklikler (diff)?"
+
+#: pkg/settings/migrations.go:25
+msgid "Disable 'provides' setting by default"
+msgstr "Varsayılan olarak 'provides' ayarını geçersiz kıl"
+
+#: clean.go:78
+msgid "Do you want to remove ALL AUR packages from cache?"
+msgstr "AUR paketlerinin TÜMÜNÜ önbellekten silmek istiyor musun?"
+
+#: clean.go:95
+msgid "Do you want to remove ALL untracked AUR files?"
+msgstr "İzlenmemiş AUR paketlerinin TÜM dosyalarını silmek istiyor musun?"
+
+#: clean.go:80
+msgid "Do you want to remove all other AUR packages from cache?"
+msgstr "Tüm diğer AUR paketlerini önbellekten silmek istiyor musun?"
+
+#: pkg/menus/edit_menu.go:61
+msgid "Edit PKGBUILD with?"
+msgstr "PKGBUILD'i neyle düzenleyeceksin?"
+
+#: pkg/query/errors.go:13
+msgid "Error during AUR search: %s\n"
+msgstr "AUR araması yaparken hata: %s\n"
+
+#: pkg/upgrade/service.go:296
+msgid "Excluding packages may cause partial upgrades and break systems"
+msgstr ""
+"Paketlerin dışlanması, kısmi yükseltmelere ve sistemlerin bozulmasına neden "
+"olabilir"
+
+#: pkg/dep/dep_graph.go:60
+msgid "Explicit"
+msgstr "Açık"
+
+#: print.go:91
+msgid "Explicitly installed packages: %s"
+msgstr "Doğrudan kurulan paketler: %s"
+
+#: pkg/dep/dep_graph.go:437 pkg/dep/dep_graph.go:535
+msgid "Failed to find AUR package for"
+msgstr "Şunun için AUR paketi bulunamadı:"
+
+#: pkg/sync/build/installer.go:120
+msgid "Failed to install layer, rolling up to next layer."
+msgstr "Katman yüklenemedi, sonraki katmana geçiliyor."
+
+#: pkg/sync/build/errors.go:16
+msgid ""
+"Failed to install the following packages. Manual intervention is required:"
+msgstr "İstenen paketler yüklenemedi. Manüel müdahale gerekli:"
+
+#: print.go:45
+msgid "First Submitted"
+msgstr "İlk İletilen"
+
+#: pkg/query/aur_warnings.go:79
+msgid "Flagged Out Of Date AUR Packages:"
+msgstr "Eski Olarak İşaretlenmiş AUR Paketleri:"
+
+#: print.go:90
+msgid "Foreign installed packages: %s"
+msgstr "Yabancı kurulan paketler: %s"
+
+#: pkg/vcs/vcs.go:144
+msgid "Found git repo: %s"
+msgstr "Git deposu bulundu: %s"
+
+#: vcs.go:72
+msgid "GenDB finished. No packages were installed"
+msgstr "GenDB tamamlandı. Hiçbir paket kurulmadı"
+
+#: print.go:36
+msgid "Groups"
+msgstr "Gruplar"
+
+#: pkg/sync/srcinfo/pgp/keys.go:88
+msgid "Import?"
+msgstr "İçe Aktar?"
+
+#: pkg/sync/srcinfo/pgp/keys.go:97
+msgid "Importing keys with gpg..."
+msgstr "GPG anahtarları içe aktarılıyor..."
+
+#: print.go:46
+msgid "Keywords"
+msgstr "Anahtar Kelimeler"
+
+#: print.go:47
+msgid "Last Modified"
+msgstr "Son Değiştirme"
+
+#: print.go:35
+msgid "Licenses"
+msgstr "Lisanslar"
+
+#: pkg/dep/dep_graph.go:77
+msgid "Local"
+msgstr "Yerel"
+
+#: print.go:48
+msgid "Maintainer"
+msgstr "Bakımcı:"
+
+#: pkg/dep/dep_graph.go:62
+msgid "Make Dependency"
+msgstr "Make Bağımlılığı"
+
+#: print.go:40
+msgid "Make Deps"
+msgstr "Make Bağımlılıkları"
+
+#: pkg/query/aur_warnings.go:71
+msgid "Missing AUR Debug Packages:"
+msgstr "Eksik AUR Hata Ayıklama Paketleri:"
+
+#: pkg/dep/dep_graph.go:79
+msgid "Missing"
+msgstr "Kayıp"
+
+#: print.go:31
+msgid "Name"
+msgstr "İsim"
+
+#: pkg/dep/dep_graph.go:442 pkg/dep/dep_graph.go:548
+msgid "No AUR package found for"
+msgstr "Şunun için AUR paketi bulunamadı: "
+
+#: pkg/dep/dep_graph.go:182
+#, fuzzy
+msgid "No package found for"
+msgstr "Şunun için AUR paketi bulunamadı: "
+
+#: print.go:225
+msgid "None"
+msgstr "Yok"
+
+#: print.go:39
+msgid "Optional Deps"
+msgstr "İsteğe Bağlı Bağımlılıklar"
+
+#: pkg/query/aur_warnings.go:75
+msgid "Orphan (unmaintained) AUR Packages:"
+msgstr "Orphan (bakımsız) AUR Paketleri:"
+
+#: print.go:53 print.go:55
+msgid "Out-of-date"
+msgstr "Eski"
+
+#: pkg/sync/srcinfo/pgp/keys.go:115
+msgid "PGP keys need importing:"
+msgstr "İçe aktarılması gereken PGP anahtarları:"
+
+#: pkg/sync/workdir/preparer.go:252
+msgid "PKGBUILD up to date, skipping download: %s"
+msgstr "PKGBUILD güncel, indirme geçiliyor: %s"
+
+#: pkg/menus/edit_menu.go:130
+msgid "PKGBUILDs to edit?"
+msgstr "Düzenlenecek PKGBUILD'ler?"
+
+#: print.go:60
+msgid "Package Base ID"
+msgstr "Paket Temel Kimliği (ID):"
+
+#: print.go:61
+msgid "Package Base"
+msgstr "Paket Temeli"
+
+#: pkg/query/aur_warnings.go:67
+msgid "Packages not in AUR:"
+msgstr "AUR'da bulunmayan paketler:"
+
+#: pkg/menus/clean_menu.go:54
+msgid "Packages to cleanBuild?"
+msgstr "cleanBuild yapılacak paketler?"
+
+#: pkg/dep/dep_graph.go:202
+msgid "Packages to exclude"
+msgstr "Dışlanacak paketler"
+
+#: pkg/upgrade/service.go:295
+msgid "Packages to exclude: (eg: \"1 2 3\", \"1-3\", \"^4\" or repo name)"
+msgstr "Dışlanacak paketler: (ör. \"1 2 3\", \"1-3\", \"^4\" veya depo ismi)"
+
+#: cmd.go:392
+msgid "Packages to install (eg: 1 2 3, 1-3 or ^4)"
+msgstr "Kurulacak paketler (ör. 1 2 3, 1-3 veya ^4)"
+
+#: print.go:49
+msgid "Popularity"
+msgstr "Popülerlik"
+
+#: pkg/menus/diff_menu.go:172 pkg/menus/edit_menu.go:143
+msgid "Proceed with install?"
+msgstr "Kurmaya devam et?"
+
+#: print.go:37
+msgid "Provides"
+msgstr "Sağlar:"
+
+#: pkg/sync/workdir/preparer.go:125
+msgid "Remove make dependencies after install?"
+msgstr "Make bağımlılıkları kurulum sonrası silinsin mi?"
+
+#: print.go:43
+msgid "Replaces"
+msgstr ""
+
+#: pkg/dep/dep_graph.go:730
+msgid "Repository AUR"
+msgstr "AUR Deposu"
+
+#: print.go:30 pkg/db/ialpm/alpm.go:191
+msgid "Repository"
+msgstr "Depo"
+
+#: pkg/dep/dep_graph.go:78
+msgid "SRCINFO"
+msgstr "SRCINFO"
+
+#: pkg/upgrade/service.go:72
+msgid "Searching AUR for updates..."
+msgstr "AUR güncellemeleri aranıyor..."
+
+#: pkg/upgrade/service.go:160
+msgid "Searching databases for updates..."
+msgstr "Veritabanlarında güncellemeler aranıyor..."
+
+#: pkg/query/query_builder.go:214
+msgid "Showing repo packages only"
+msgstr "Sadece depo paketleri gösteriliyor"
+
+#: print.go:95
+msgid "Size of pacman cache %s: %s"
+msgstr "pacman önbelleğinin boyutu: %s: %s"
+
+#: print.go:98
+msgid "Size of yay cache %s: %s"
+msgstr "yay önbelleğinin boyutu: %s: %s"
+
+#: print.go:62
+msgid "Snapshot URL"
+msgstr "Anlık görüntü URL'si"
+
+#: pkg/dep/dep_graph.go:76
+msgid "Sync"
+msgstr "Senkronize"
+
+#: print.go:100
+msgid "Ten biggest packages:"
+msgstr "En büyük 10 paket:"
+
+#: pkg/sync/sync.go:124
+msgid "The following packages are not compatible with your architecture:"
+msgstr "Aşağıdaki paketler sistem mimarin ile uyumlu değil:"
+
+#: pkg/db/ialpm/alpm.go:179 pkg/dep/dep_graph.go:726
+msgid "There are %[1]d providers available for %[2]s:"
+msgstr "%[2]s için %[1]d sağlayıcı bulunuyor:"
+
+#: pkg/settings/exe/cmd_builder.go:258
+msgid "There may be another Pacman instance running. Waiting..."
+msgstr "Başka bir Pacman talebi çalışıyor olabilir. Bekleniyor..."
+
+#: print.go:92
+msgid "Total Size occupied by packages: %s"
+msgstr "Paketlerin tuttuğu Toplam Boyut: %s"
+
+#: print.go:89
+msgid "Total installed packages: %s"
+msgstr "İndirilen toplam paketler: %s"
+
+#: pkg/sync/sync.go:132
+msgid "Try to build them anyway?"
+msgstr "Yine de yapılandırmaya çalış?"
+
+#: print.go:34
+msgid "URL"
+msgstr "URL"
+
+#: clean.go:194 pkg/menus/clean_menu.go:65 pkg/menus/clean_menu.go:71
+msgid "Unable to clean:"
+msgstr "Temizlenemiyor:"
+
+#: get.go:42 get.go:74
+msgid "Unable to find the following packages:"
+msgstr "Aşağıdaki paketler bulunamadı:"
+
+#: vote.go:20
+msgid "Unable to handle package vote for: %s. err: %s"
+msgstr "Şunlar için paket oylaması işlenemiyor:%s. hata: %s"
+
+#: clean.go:170
+msgid "Unable to remove %s: %s"
+msgstr "Kaldırılamıyor %s: %s"
+
+#: print.go:32
+msgid "Version"
+msgstr "Sürüm"
+
+#: print.go:50
+msgid "Votes"
+msgstr "Oylar"
+
+#: print.go:87
+msgid "Yay version v%s"
+msgstr "Yay sürümü v%s"
+
+#: pkg/menus/menu.go:49
+msgid "[N]one"
+msgstr "[N]Hiçbiri"
+
+#: clean.go:83
+msgid ""
+"\n"
+"Build directory:"
+msgstr ""
+"\n"
+"Yapım dizini:"
+
+#: pkg/db/ialpm/alpm.go:201 pkg/dep/dep_graph.go:740
+msgid ""
+"\n"
+"Enter a number (default=1): "
+msgstr ""
+"\n"
+"Bir sayı girin (varsayılan=1):"
+
+#: pkg/settings/errors.go:29
+msgid "aborting due to user"
+msgstr "kullanıcı nedeniyle iptal ediliyor"
+
+#: pkg/settings/parser/parser.go:608
+msgid "argument '-' specified without input on stdin"
+msgstr "stdin üzerinde girdi olmadan '-' argümanı kullanıldı"
+
+#: local_install.go:26
+msgid "cannot find PKGBUILD and .SRCINFO in directory"
+msgstr "dizin içerisinde PKGBUILD ve .SRCINFO bulunamadı"
+
+#: pkg/sync/build/pkg_archive.go:148
+msgid "cannot find package name: %v"
+msgstr "paket ismi bulunamadı: %v"
+
+#: pkg/sync/build/errors.go:30
+msgid "could not find PKGDEST for: %s"
+msgstr "PKGDEST dizini bulunamadı: %s"
+
+#: errors.go:9
+msgid "could not find all required packages"
+msgstr "tüm gereken paketler bulunamadı"
+
+#: pkg/sync/build/errors.go:61
+msgid "could not find any package archives listed in %s"
+msgstr "arşivde listelenmiş paketler bulunamadı %s"
+
+#: pkg/sync/build/errors.go:50 pkg/upgrade/service.go:287
+msgid "dependency"
+msgstr "bağımlılık"
+
+#: pkg/vcs/vcs.go:96 pkg/vcs/vcs.go:100
+msgid "devel check for package failed: '%s' encountered an error"
+msgstr "Paket gelişim kontrolü başarısız: '%s' hatayla karşılaştı"
+
+#: pkg/menus/edit_menu.go:110
+msgid "editor did not exit successfully, aborting: %s"
+msgstr "düzenleyici başarılı bir şekilde çıkış yapmadı, iptal ediliyor: %s"
+
+#: pkg/sync/workdir/aur_source.go:24
+msgid "error downloading sources: %s"
+msgstr "kaynaklar indirilirken hata: %s"
+
+#: pkg/download/errors.go:25
+msgid "error fetching %s: %s"
+msgstr "%s getirilirken hata: %s"
+
+#: pkg/sync/build/errors.go:9
+msgid "error installing repo packages"
+msgstr "depo paketleri indirilirken hata"
+
+#: pkg/sync/build/installer.go:266 pkg/sync/build/installer.go:270
+msgid "error installing:"
+msgstr "kurarken hata:"
+
+#: pkg/sync/build/installer.go:233 pkg/sync/build/installer.go:237
+msgid "error making: %s"
+msgstr "yapılırken hata: %s"
+
+#: pkg/sync/workdir/merge.go:24
+msgid "error merging %s: %s"
+msgstr "%s birleştirilirken hata: %s"
+
+#: pkg/download/unified.go:59
+msgid "error reading %s"
+msgstr "%s okunurken hata"
+
+#: sync.go:36
+msgid "error refreshing databases"
+msgstr "veritabanlarını yenilenirken hata"
+
+#: pkg/sync/workdir/clean.go:51 pkg/sync/workdir/merge.go:17
+msgid "error resetting %s: %s"
+msgstr "%s yenilenirken hata: %s"
+
+#: pkg/sync/build/errors.go:53
+msgid "error updating package install reason to %s"
+msgstr "paket yükleme nedeni güncellenirken hata oluştu %s"
+
+#: pkg/sync/build/errors.go:48
+msgid "explicit"
+msgstr "açık"
+
+#: pkg/settings/errors.go:23
+msgid "failed to create directory '%s': %s"
+msgstr "'%s' dizini oluşturulamadı: %s"
+
+#: pkg/settings/config.go:281
+msgid "failed to open config file '%s': %s"
+msgstr "'%s' yapılandırma dosyası açılamadı: %s"
+
+#: pkg/sync/srcinfo/service.go:114
+msgid "failed to parse %s -- skipping: %s"
+msgstr "%s çözümlenirken hata -- atlanıyor: %s"
+
+#: pkg/sync/srcinfo/service.go:118
+msgid "failed to parse %s: %s"
+msgstr "%s çözümlenirken hata: %s"
+
+#: local_install.go:77
+msgid "failed to parse .SRCINFO"
+msgstr " .SRCINFO ayrıştırılamadı"
+
+#: pkg/settings/config.go:291
+msgid "failed to read config file '%s': %s"
+msgstr "'%s' yapılandırma dosyası okunurken hata: %s"
+
+#: pkg/cmd/graph/main.go:46 pkg/runtime/runtime.go:73
+msgid "failed to retrieve aur Cache"
+msgstr "aur Cache alınamadı"
+
+#: pkg/upgrade/sources.go:27
+msgid "ignoring package devel upgrade (no AUR info found):"
+msgstr "devel paketi yükseltmesi yok sayılıyor (AUR bilgisi bulunamadı):"
+
+#: pkg/text/errors.go:8
+msgid "input too long"
+msgstr "girdi çok uzun"
+
+#: pkg/db/ialpm/alpm.go:222 pkg/dep/dep_graph.go:761
+msgid "invalid number: %s"
+msgstr "geçersiz sayı: %s"
+
+#: pkg/settings/parser/parser.go:174
+msgid "invalid option '%s'"
+msgstr "geçersiz seçenek '%s'"
+
+#: cmd.go:197
+msgid "invalid option: '--deps' and '--explicit' may not be used together"
+msgstr "geçersiz seçenek: '--deps' ve '--explicit' beraber kullanılamaz"
+
+#: pkg/download/abs.go:22
+msgid "invalid repository"
+msgstr "geçersiz depo"
+
+#: pkg/db/ialpm/alpm.go:227 pkg/dep/dep_graph.go:767
+msgid "invalid value: %d is not between %d and %d"
+msgstr "geçersiz değer: %d, %d ile %d arasında değil."
+
+#: pkg/sync/srcinfo/pgp/keys.go:110
+msgid "no keys to import"
+msgstr "aktarılacak anahtar yok"
+
+#: pkg/query/errors.go:20
+msgid "no query was executed"
+msgstr "hiçbir sorgu çalıştırılmadı"
+
+#: local_install.go:66
+msgid "no target directories specified"
+msgstr "hiç bir hedef dizin belirtilmedi"
+
+#: pkg/text/input.go:48
+msgid "no"
+msgstr "hayır"
+
+#: pkg/sync/build/installer.go:242
+msgid "nothing to install for %s"
+msgstr "indirelecek bir şey yok %s"
+
+#: pkg/settings/parser/parser.go:164
+msgid "only one operation may be used at a time"
+msgstr "bir seferde sadece bir işlem kullanılabilir"
+
+#: pkg/cmd/graph/main.go:70
+msgid "only one target is allowed"
+msgstr ""
+
+#: print.go:187
+msgid "package '%s' was not found"
+msgstr "'%s' paketi bulunamadı"
+
+#: pkg/download/errors.go:15
+msgid "package not found in AUR"
+msgstr "paket AUR'da bulunamadı"
+
+#: pkg/download/abs.go:23
+msgid "package not found in repos"
+msgstr "paket depolarda bulunamadı"
+
+#: pkg/upgrade/service.go:292
+#, fuzzy
+msgid "package"
+msgid_plural "packages"
+msgstr[0] "Paket Temeli"
+msgstr[1] "Paket Temeli"
+
+#: pkg/sync/srcinfo/pgp/keys.go:100
+msgid "problem importing keys"
+msgstr "anahtarları aktarırken sorun"
+
+#: clean.go:105
+msgid "removing AUR packages from cache..."
+msgstr "AUR paketleri önbellekten siliniyor..."
+
+#: clean.go:178 pkg/sync/workdir/clean.go:41
+msgid "removing untracked AUR files from cache..."
+msgstr "izlenmemiş AUR paketleri önbellekten siliniyor..."
+
+#: pkg/sync/build/errors.go:38
+msgid "the PKGDEST for %s is listed by makepkg but does not exist: %s"
+msgstr "%s için olan PKGDEST, makepkg'da listelenmiş ancak bulunmuyor: %s"
+
+#: pkg/sync/sync.go:45
+msgid "there is nothing to do"
+msgstr "yapılacak bir şey yok"
+
+#: pkg/db/ialpm/alpm.go:247
+msgid "unable to CreateHandle: %s"
+msgstr "CreateHandle yapılamıyor: %s"
+
+#: cmd.go:186
+msgid "unhandled operation"
+msgstr "beklenmeyen işlem"
+
+#: cmd.go:450
+msgid "unknown-version"
+msgstr "bilinmeyen sürüm"
+
+#: pkg/text/input.go:47
+msgid "yes"
+msgstr "evet"
+
+#~ msgid " (Target"
+#~ msgstr "(Hedef"
+
+#~ msgid " (Wanted by: "
+#~ msgstr "(Tarafından isteniyor:"
+
+#~ msgid "%s not satisfied, flushing install queue"
+#~ msgstr "%s sağlanmamış, indirme kuyruğu boşaltılıyor"
+
+#~ msgid "Checking for conflicts..."
+#~ msgstr "Çakışmalar kontrol ediliyor..."
+
+#~ msgid "Checking for inner conflicts..."
+#~ msgstr "İç çakışmalar kontrol ediliyor..."
+
+#~ msgid "Conflicting packages will have to be confirmed manually"
+#~ msgstr "Çakışan paketlerin elle onaylanması gerekecek"
+
+#~ msgid "Inner conflicts found:"
+#~ msgstr "İç çakışmalar bulundu:"
+
+#~ msgid "Installing %s will remove:"
+#~ msgstr "%s paketini kurmak şunları kaldıracak:"
+
+#~ msgid "PKGBUILD up to date, Skipping (%d/%d): %s"
+#~ msgstr "PKGBUILD güncel, Atlanıyor (%d/%d): %s"
+
+#~ msgid "Package conflicts found:"
+#~ msgstr "Paket çakışmaları bulundu:"
+
+#~ msgid "Packages to upgrade."
+#~ msgstr "Yükseltilecek paketler."
+
+#~ msgid "Querying AUR..."
+#~ msgstr "AUR sorgulanıyor..."
+
+#~ msgid "could not find all required packages:"
+#~ msgstr "tüm gereken paketler bulunamadı:"
+
+#~ msgid "could not find srcinfo for: %s"
+#~ msgstr "%s : İçin scrinfo bulunamadı"
+
+#~ msgid "package conflicts can not be resolved with noconfirm, aborting"
+#~ msgstr "paket çakışmaları noconfirm ile çözümlenemedi, iptal ediliyor"

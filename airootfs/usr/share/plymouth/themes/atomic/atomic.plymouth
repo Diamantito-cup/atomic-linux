@@ -1,0 +1,14 @@
+[Plymouth Theme]
+Name=Atomic
+Description=Tema de arranque oficial de Atomic Linux
+ModuleName=spinner
+
+[spinner]
+ImageDir=/usr/share/plymouth/themes/atomic
+FramesPerSecond=30
+DialogHorizontalAlignment=.5
+DialogVerticalAlignment=.5
+TitleHorizontalAlignment=.5
+TitleVerticalAlignment=.5
+WatermarkHorizontalAlignment=.5
+WatermarkVerticalAlignment=.5

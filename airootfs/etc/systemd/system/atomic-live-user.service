@@ -1,0 +1,12 @@
+[Unit]
+Description=Configurar Usuario Temporal Live para Atomic Linux
+Before=greetd.service
+ConditionFirstBoot=yes
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/atomic-live-user.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,44 @@
+name: Test against pacman
+on:
+  pull_request:
+
+jobs:
+  build:
+    name: Lint and test yay
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/jguer/yay-builder:latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v3
+        with:
+          path: ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+      - name: Lint
+        env:
+          GOFLAGS: -buildvcs=false -tags=next
+        run: /app/bin/golangci-lint run -v ./...
+      - name: Run Build and Tests
+        run: make test
+
+      - name: Run Integration Tests
+        continue-on-error: true
+        run: |
+          useradd -m yay &&
+          chown -R yay:yay . &&
+          cp -r ~/go/ /home/yay/go/ &&
+          chown -R yay:yay /home/yay/go/ &&
+            su yay -c "make test-integration"
+      - name: Build yay Artifact
+        env:
+          GOFLAGS: -buildvcs=false -tags=next
+        run: make
+      - name: Upload yay Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: yay
+          path: ./yay
+          if-no-files-found: error
+          overwrite: true

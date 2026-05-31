@@ -1,0 +1,6 @@
+#!/bin/sh
+# Permitir root en el servidor gráfico
+xhost +local:root > /dev/null
+
+# Lanzar calamares con el entorno clonado
+exec sudo env WAYLAND_DISPLAY=$WAYLAND_DISPLAY XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR QT_QPA_PLATFORM="wayland;xcb" calamares "$@"

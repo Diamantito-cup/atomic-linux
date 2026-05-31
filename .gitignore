@@ -1,0 +1,10 @@
+# Ignorar la ISO final empaquetada y la carpeta de salida
+out/
+*.iso
+
+# Ignorar carpetas de trabajo temporal de mkarchiso si las usas ahí dentro
+work/
+
+# Archivos ocultos molestos de edición
+*.swp
+*~

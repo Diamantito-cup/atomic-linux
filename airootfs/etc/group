@@ -1,0 +1,4 @@
+root:x:0:root
+wheel:x:998:root,live
+live:x:1000:
+greetd:x:997:

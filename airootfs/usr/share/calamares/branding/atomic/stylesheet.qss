@@ -1,0 +1,45 @@
+/* Estilo general oscuro y moderno */
+QWidget {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: "FiraCode Nerd Font", sans-serif;
+}
+
+/* Botones principales */
+QPushButton {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 4px;
+    padding: 6px 14px;
+}
+
+QPushButton:hover {
+    background-color: #45475a;
+    border: 1px solid #89b4fa;
+}
+
+QPushButton:pressed {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+}
+
+/* Barras de progreso */
+QProgressBar {
+    background-color: #313244;
+    border: 1px solid #45475a;
+    border-radius: 4px;
+    text-align: center;
+    color: transparent;
+}
+
+QProgressBar::chunk {
+    background-color: #89b4fa;
+    border-radius: 3px;
+}
+
+/* Panel lateral */
+#stepList {
+    background-color: #181825;
+    border-right: 1px solid #313244;
+}
