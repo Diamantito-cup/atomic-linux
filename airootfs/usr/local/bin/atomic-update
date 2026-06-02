@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "🔍 Revisando los repositorios de Atomic Linux..."
+
+# checkupdates revisa los repos oficiales y tu atomic-repo de forma segura
+oficiales=$(checkupdates 2>/dev/null | wc -l)
+
+# yay -Qu revisa lo de AUR / chaotic-aur
+aur=$(yay -Qu 2>/dev/null | wc -l)
+
+total=$((oficiales + aur))
+
+if [ "$total" -eq 0 ]; then
+    echo "✨ ¡Todo al día, mi hermano! No hay nada que hacer por aquí."
+    exit 0
+else
+    echo "📦 Tienes $total actualizaciones pendientes."
+    read -p "¿Quieres instalar todo ahora? (s/n): " respuesta
+    if [[ "$respuesta" == "s" || "$respuesta" == "S" ]]; then
+        sudo pacman -Syu
+        yay -Syu
+    else
+        echo "🛑 Actualización cancelada. Tu sistema sigue intacto."
+    fi
+fi

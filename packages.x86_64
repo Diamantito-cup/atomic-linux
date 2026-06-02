@@ -158,10 +158,15 @@ visual-studio-code-bin
 plymouth
 quickshell
 hyprmod
-greetd-dms-greeter-git
+greetd-dms-greeter
 python-hyprland-config
 python-hyprland-monitors
 python-hyprland-schema
 python-hyprland-socket
 python-hyprland-state
 python-hyprpy
+efibootmgr
+util-linux
+grep
+sed
+kpmcore

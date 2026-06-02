@@ -89,5 +89,15 @@ echo "==> Desinstalando Calamares por completo del sistema definitivo..."
 # Desinstalar el paquete calamares y sus dependencias huérfanas en el sistema real
 arch-chroot "$TARGET_ROOT" pacman -Rns calamares --noconfirm 2>/dev/null || echo "⚠️ Calamares no se pudo remover o ya no existía."
 
+---
+dontChroot: false
+timeout: 30
+script:
+    - "rm -rf /etc/systemd/system/getty@tty1.service.d"
+    - "rm -f /etc/systemd/system/atomic-live-user.service"
+    - "rm -f /etc/systemd/system/atomic-setup.service"
+    - "rm -f /etc/systemd/system/pacman-init.service"
+    - "rm -f /etc/systemd/system/choose-mirror.service"
+
 echo "==> [PROCESO COMPLETADO EXITOSAMENTE]"
 exit 0
