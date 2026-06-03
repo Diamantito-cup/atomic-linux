@@ -10,8 +10,8 @@ strings:
     versionedName:       "Atomic Linux 2026.05"
     shortVersionedName:  "Atomic 2026.05"
     bootloaderEntryName: "Atomic"
-    productUrl:          "https://github.com/atomic-linux"
-    supportUrl:          "https://github.com/atomic-linux/issues"
+    productUrl:          "https://github.com/Diamantito-cup/atomic-linux"
+    supportUrl:          "https://github.com/Diamantito-cup/atomic-linux"
 
 images:
     productLogo:         "logo.png"
