@@ -14,17 +14,32 @@ ROOT_UUID=$(blkid -s UUID -o value "$ROOT_PART")
 cat <<EOF > /boot/limine.conf
 timeout: 5
 remember_last_entry: yes
+
+# ==========================================
+# TEMA VISUAL Y ESTÉTICA
+# ==========================================
 interface_resolution: 1920x1080
+interface_branding: Atomic Linux
+interface_branding_color: 6
+interface_help_hidden: yes
+term_margin: 50
+term_margin_gradient: 0
 term_background: 00000000
 
-# Descomenta la siguiente línea si metes una imagen en /boot/
+# Descomenta la siguiente línea y pon tu imagen en /boot/ si quieres fondo
 # background_path: boot():/atomic-bg.jpg
+# background_style: stretched
 
+# ==========================================
+# ENTRADA DE SISTEMA: ATOMIC LINUX
+# ==========================================
 /Atomic Linux
     protocol: linux
     kernel_path: boot():/vmlinuz-linux
-    initramfs_path: boot():/initramfs-linux.img
-    cmdline: root=UUID=${ROOT_UUID} rw quiet splash loglevel=3 rd.udev.log_priority=3 vt.global_cursor_default=0
+    module_path: boot():/initramfs-linux.img
+    
+    # Parámetros (Plymouth, Silencio, BTRFS y NVIDIA Wayland)
+    cmdline: root=UUID=${ROOT_UUID} rw rootfstype=btrfs quiet splash loglevel=3 rd.udev.log_priority=3 vt.global_cursor_default=0 nvidia_drm.modeset=1
 EOF
 
 # 3. Detectar el firmware (UEFI o Legacy BIOS)
