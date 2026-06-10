@@ -19,7 +19,7 @@ Atomic Linux no es solo otra distribución; es un entorno de trabajo pensado par
 
 ### 📸 Pre visualización
 
-<video src="https://raw.githubusercontent.com/Diamantito-cup/atomic-linux/main/assets/20260610_155820.mp4" width="100%" controls></video>
+<video src="https://github.com/Diamantito-cup/atomic-linux/blob/main/assets/20260610_155820.mp4" width="100%" controls></video>
 
 ---
 
@@ -174,6 +174,7 @@ El árbol de este repositorio está organizado de forma modular para facilitar s
 
 ## Colaboradores 🫂
 [@Diamantito-cup](https://github.com/Diamantito-cup) -- Desarrollador principal
+
 [@Brainitech](https://github.com/Brainitech) -- Desarrollador de Brain_Shell
 
 Estamos abiertos a sugerencias y recomendaciones, arreglo de bugs o alguna idea para que el sistema sea más seguro, eficiente y entretenido para los demás usuarios.
