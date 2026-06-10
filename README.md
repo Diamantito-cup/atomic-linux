@@ -1,15 +1,12 @@
 ## Sobre el Atomic-Linux Project
+
 | :---: |
 | ![Atomic Linux Logo](https://raw.githubusercontent.com/Diamantito-cup/atomic-linux/main/assets/logo.png) |
 
 > **Una experiencia de escritorio vanguardista y altamente optimizada basada en Arch Linux.**
+
 | :---: |
-| [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-| ![Base-Arch](https://img.shields.io/badge/Base-Arch%20Linux-blue?style=for-the-badge&logo=arch-linux)
-![WM-Hyprland](https://img.shields.io/badge/WM-Hyprland-26a69a?style=for-the-badge&logo=wayland) |
-| [![Versión](https://img.shields.io/github/v/release/Diamantito-cup/atomic-linux?style=flat-square&color=89b4fa&label=versi%C3%B3n)](https://github.com/Diamantito-cup/atomic-linux/releases)
-[![Estrellas](https://img.shields.io/github/stars/Diamantito-cup/atomic-linux?style=flat-square&color=f9e2af)](https://github.com/Diamantito-cup/atomic-linux/stargazers)
-[![Colaboradores](https://img.shields.io/github/contributors/Diamantito-cup/atomic-linux?style=flat-square&color=a6e3a1&label=colaboradores)](https://github.com/Diamantito-cup/atomic-linux/graphs/contributors) |
+| [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-f38ba8?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0) ![Base-Arch](https://img.shields.io/badge/Base-Arch%20Linux-89b4fa?style=flat-square&logo=arch-linux) ![WM-Hyprland](https://img.shields.io/badge/WM-Hyprland-26a69a?style=flat-square&logo=wayland) [![Versión](https://img.shields.io/github/v/release/Diamantito-cup/atomic-linux?style=flat-square&color=cba6f7&label=versión)](https://github.com/Diamantito-cup/atomic-linux/releases) [![Estrellas](https://img.shields.io/github/stars/Diamantito-cup/atomic-linux?style=flat-square&color=f9e2af)](https://github.com/Diamantito-cup/atomic-linux/stargazers) [![Colaboradores](https://img.shields.io/github/contributors/Diamantito-cup/atomic-linux?style=flat-square&color=a6e3a1&label=colaboradores)](https://github.com/Diamantito-cup/atomic-linux/graphs/contributors) |
 
 Atomic linux busca ser una opcion preconfigurada y "amigable" con el usuario, sin perder la potencia de arch linux, Atomic Linux trae preconfigurado un entorno hyprland vanguardista (con Lua), Brain_Shell (repositorio externo) y las herramientas necesarias para que funcione como un sistema estable y perfecto para aquellos devs que quieran una estetica anime, estilizar su escritorio y trbajar facilmente, ya que Atomic Linux ofrece software de desarrollo preinstalado (como VSCode, Onlyoffice, Zen-Browser y Yazi), que busca hacer sentir comodo al usuario
 
