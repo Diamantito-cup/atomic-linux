@@ -1,4 +1,4 @@
-## Sobre el Atomic-Linux Project
+<h3 align="center">Sobre el Atomic-Linux Project</h3>
 
 ---
 
