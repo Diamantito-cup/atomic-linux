@@ -19,7 +19,7 @@ Atomic Linux no es solo otra distribución; es un entorno de trabajo pensado par
 
 ### 📸 Pre visualización
 
-<video src="https://github.com/Diamantito-cup/atomic-linux/blob/main/assets/20260610_155820.mp4" width="100%" controls></video>
+<video src="assets/20260610_155820.mp4" width="100%" controls></video>
 
 ---
 
