@@ -9,9 +9,6 @@ iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="arch"
 buildmodes=('iso')
 
-# OJO: Dejé esto vacío o comentado temporalmente 
-# ya que inyecté Limine a mano en la carpeta efiboot, para que 
-# mkarchiso no sobrescriba el bootloader con systemd-boot.
 bootmodes=('bios.syslinux' 'uefi.systemd-boot')
 
 pacman_conf="pacman.conf"

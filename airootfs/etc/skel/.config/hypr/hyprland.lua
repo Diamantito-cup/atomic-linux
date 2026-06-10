@@ -6,7 +6,7 @@
 ------------------
 ---- MONITORS ----
 ------------------
--- Ajustado exactamente a mi monitor principal de laptop (eDP-1)
+-- Ajustado exactamente a su monitor principal
 hl.monitor({
     output   = "",
     mode     = "preferred",
@@ -24,12 +24,22 @@ local menu        = "hyprlauncher"
 -------------------
 ---- AUTOSTART ----
 -------------------
-hl.on("hyprland.start", function ()
-    -- Inicializamos Dank Material Shell (DMS)
-    hl.exec_cmd("dms run")
-
-    hl.exec_cmd("sudo -E calamares")
+-- Brain Shell Autostarts
+hl.on("hyprland.start", function()
+     -- Conseguimos la HOME de forma dinámica en Lua
+     local home = os.getenv("HOME")
+     
+     hl.exec_cmd("awww-daemon")
+     -- Usamos la variable local 'home' en lugar de tu ruta personal
+     hl.exec_cmd("hypridle -c " .. home .. "/.local/src/Brain_Shell/src/config/hypridle.conf")
+     hl.exec_cmd("quickshell -c /usr/share/Brain_Shell")
+     hl.exec_cmd("systemctl --user start hyprpolkitagent")
+     hl.exec_cmd("wl-paste --type text --watch cliphist store")
+     hl.exec_cmd("wl-paste --type image --watch cliphist store")
 end)
+
+-- Brain_ShellKeybinds universales usando la variable 'home'
+dofile(os.getenv("HOME") .. "/.config/Brain_Shell/Brain_ShellKeybinds.lua")
 
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----

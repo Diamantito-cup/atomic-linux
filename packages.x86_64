@@ -139,12 +139,9 @@ yazi
 vim
 dolphin
 zen-browser-bin
-greetd
 hyprshot
 hyprlock
-greetd-tuigreet
 calamares
-dms-shell
 qt6ct
 kvantum
 cava
@@ -158,7 +155,6 @@ visual-studio-code-bin
 plymouth
 quickshell
 hyprmod
-greetd-dms-greeter
 python-hyprland-config
 python-hyprland-monitors
 python-hyprland-schema
@@ -206,3 +202,5 @@ slurp
 wtype
 cliphist
 zsh
+greetd
+greetd-regreet
