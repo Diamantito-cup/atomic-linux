@@ -9,10 +9,11 @@
 > **Una experiencia de escritorio vanguardista y altamente optimizada basada en Arch Linux.**
 
 <p align="center">
+  <a href="https://github.com/Diamantito-cup/atomic-linux/wiki"><img src="https://img.shields.io/badge/Wiki-Documentaci%C3%B3n-74c7ec?style=flat-square&logo=bookstack&logoColor=white" alt="Wiki" /></a>
   <a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPLv3-f38ba8?style=flat-square" alt="License: GPL v3" /></a>
   <img src="https://img.shields.io/badge/Base-Arch%20Linux-89b4fa?style=flat-square&logo=arch-linux" alt="Base-Arch" />
   <img src="https://img.shields.io/badge/WM-Hyprland-26a69a?style=flat-square&logo=wayland" alt="WM-Hyprland" />
-<a href="https://github.com/Diamantito-cup/atomic-linux/releases"><img src="https://img.shields.io/github/v/release/Diamantito-cup/atomic-linux?style=flat-square&color=cba6f7&label=versi%C3%B3n" alt="Versión" /></a>
+  <a href="https://github.com/Diamantito-cup/atomic-linux/releases"><img src="https://img.shields.io/github/v/release/Diamantito-cup/atomic-linux?style=flat-square&color=cba6f7&label=versi%C3%B3n" alt="Versión" /></a>
   <a href="https://github.com/Diamantito-cup/atomic-linux/stargazers"><img src="https://img.shields.io/github/stars/Diamantito-cup/atomic-linux?style=flat-square&color=f9e2af" alt="Estrellas" /></a>
   <a href="https://github.com/Diamantito-cup/atomic-linux/graphs/contributors"><img src="https://img.shields.io/github/contributors/Diamantito-cup/atomic-linux?style=flat-square&color=a6e3a1&label=colaboradores" alt="Colaboradores" /></a>
 </p>
