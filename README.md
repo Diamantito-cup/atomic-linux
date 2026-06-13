@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/24ab2d8e-0f31-47fa-8a56-c69094f4c050
 
 ## ✨ Características Principales
 
-* **🚀 Rendimiento Atómico:** ISO optimizada al extremo (menos de 4.0 GB) con compresión XZ avanzada para un arranque ultra rápido.
+* **🚀 Rendimiento Atómico:** ISO optimizada al extremo (menos de 5.0 GB) con compresión XZ avanzada para un arranque ultra rápido.
 * **🧠 Brain_Shell Integrada:** Interfaz de vanguardia basada en tecnologías QML/Modernas que sustituye los paneles tradicionales por un entorno inteligente.
 * **🛡️ Login Elegante:** Pantalla de inicio de sesión gestionada por `greetd` + `ReGreet` en GTK4 nativo bajo Wayland.
 * **📦 Atomic-Repo Personalizado:** Repositorio propio con herramientas exclusivas del sistema para actualizaciones modulares limpias.
